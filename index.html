@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адаптивна верстка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Моя адаптивна сторінка</h1>
+    </header>
+    <nav>
+        <div class="burger_menu" onclick="toggleMenu()">☰</div>
+        <ul class="">
+            <li><a href="#">Головна</a></li>
+            <li><a href="#">Контакти</a></li>
+            <li><a href="#">Про нас</a></li>
+        </ul>
+    </nav>
+    <main class="">
+        <section class="welcome">
+            <h2>Олівці</h2>
+            <p>Олівці є прості грифельні та кольорового грифелю.<br>
+            Олівець — це інструмент для писання, малювання чи креслення, писальна частина якого складається з глини із наповнювачем, покритої дерев'яною оболонкою. Існують також механічні олівці — у металевій чи пластиковій оболонці, споряджені висувальним механізмом.</p>
+            <img src="5.png" alt="Ласкаво просимо">
+        </section>
+        <section class="news1">
+            <h2 class="news_h2">Новини</h2>
+           <div class="news">
+            <article>
+                <h3>Пезлі</h3>
+                <p>Пезлі бувають тонкі та широкі в ці два види входять середні малі, великі.</p>
+                <img src="4.png" alt="Новина 1" class="news-img">
+            </article>
+            <article>
+                <h3>Фарби</h3>
+                <p>Фарби прикрашають малюнки це набагато світліше ніж малювати олівцями.</p>
+                <img src="3.png" alt="Новина 2" class="news-img">
+            </article>
+             <article>
+                <h3>Маркери</h3>
+                <p>Маркери схожі на текстовиділячі але маркери розмальовують.</p>
+                <img src="1.png" alt="Новина 2" class="news-img">
+            </article>
+             <article>
+                <h3>Скетчбук</h3>
+                <p>Скетчбук для малювання дуже зручний у ньому плотніші сторінки та в ньому зручніше малювати.</p>
+                <img src="2.png" alt="Новина 2" class="news-img">
+            </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Моя адаптивна сторінка</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+        var navItems = document.querySelector('nav ul');
+        navItems.classList.toggle('show');
+    }
+    </script>
+</body>
+</html>
